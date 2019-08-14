@@ -60,7 +60,7 @@ class Media extends AbstractDelivery
                 $ogMetaData['og:image:width'] = $thumbnail->get_width();
                 $ogMetaData['og:image:height'] = $thumbnail->get_height();
 
-                $coverUrl = $baseUrl . $thumbnail->get_url();
+                $coverUrl = $baseUrl . $thumbnail->get_permalink()->get_url();
 
                 $embedConfig = $this->getEmbedConfiguration();
 
